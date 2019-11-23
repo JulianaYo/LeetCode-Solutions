@@ -11,15 +11,13 @@ public class Solution {
         A = A.Skip(1).ToArray();
         for (int i = 0; i < arrChecker.Length; i++){
             bool el = A.All( b => b.IndexOf(arrChecker[i]) > -1);
-            if (el) {
-                
-        for (int j = 0; j < A.Length; j++) {
-            
-        A[j] = A[j].Remove(A[j].IndexOf(arrChecker[i]),1);
-    }
-                    arr.Add(arrChecker[i].ToString());
+            if (el) {    
+                for (int j = 0; j < A.Length; j++) {
+                A[j] = A[j].Remove(A[j].IndexOf(arrChecker[i]),1);
+             }   
+            arr.Add(arrChecker[i].ToString());
             }
         }
-         return arr;
+        return arr;
     }
 }
