@@ -6,8 +6,8 @@
 
 public class Solution {
     public bool IsAnagram(string s, string t) {
-           string sortedS = String.Concat(s.OrderBy(c => c));
-            string sortedT =  String.Concat(t.OrderBy(c => c));
+        string sortedS = String.Concat(s.OrderBy(c => c));
+        string sortedT =  String.Concat(t.OrderBy(c => c));
         if (sortedS == sortedT) {
             return true;
         }

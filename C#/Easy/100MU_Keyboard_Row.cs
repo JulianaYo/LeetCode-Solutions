@@ -6,8 +6,7 @@
 
 
 public class Solution {
-    public string[] FindWords(string[] words) {
-        
+    public string[] FindWords(string[] words) {  
         string[] arrKeybord;
         arrKeybord = new string[3] { "qwertyuiop", "asdfghjkl", "zxcvbnm" };
         List<string> arrWords = new List<string> {};
